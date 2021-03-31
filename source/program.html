@@ -47,7 +47,7 @@
       <form class="program__form form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form__fieldset">
           <div class="wrapper">
-            <legend class="visually-hidden">Общие параметры кота</legend>
+            <h2 class="visually-hidden">Общие параметры кота</h2>
             <ul class="form__list form__list--cat">
               <li class="form__item field">
                 <label class="field__label" for="cat-name">имя:*</label>
@@ -66,7 +66,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <div class="wrapper">
-            <legend class="visually-hidden">Выбор типа программы</legend>
+            <h2 class="visually-hidden">Выбор типа программы</h2>
             <ul class="form__list form__list--programs">
               <li class="form__item field">
                 <input class="field__input field__radio" type="radio" name="program-type" checked id="weight-loss">
@@ -83,8 +83,8 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="wrapper">
+        <div class="wrapper">
+          <fieldset class="form__fieldset">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <ul class="form__list form__list--owner">
               <li class="form__item field">
@@ -96,19 +96,14 @@
                 <input class="field__input field__tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="phone">
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--comment">
-          <div class="wrapper">
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--comment">
             <legend class="form__legend">Комментарий</legend>
             <div class="form__item field">
-              <label for="comments" class="visually-hidden">краткий рассказ в свободной форме</label>
               <textarea class="field__input field__textarea" name="comments" placeholder="расскажите обо всех повадках кота" id="comments"></textarea>
             </div>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <div class="wrapper">
+          </fieldset>
+          <fieldset class="form__fieldset">
             <legend class="form__legend">Дополнительно</legend>
             <ul class="form__list form__list--others">
               <li class="form__item field">
@@ -128,13 +123,11 @@
                 <label class="field__label" for="vitamins">витамины</label>
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <div class="wrapper">
+          </fieldset>
           <button class="button" type="submit">отправить заявку</button>
         </div>
+        <p class="program__note">* - Обязательные поля</p>
       </form>
-      <p class="program__note">* - Обязательные поля</p>
     </section>
   </main>
 
