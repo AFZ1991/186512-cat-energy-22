@@ -1,0 +1,26 @@
+/* Block page-footer */
+.page-footer .wrapper {
+  background-color: $basic_grey;
+}
+
+.contacts__map {
+  margin: auto;
+  width: 320px;
+}
+
+// element logo
+.page-footer__logo {
+  padding-top: 39px;
+  padding-bottom: 32px;
+}
+
+// element social
+.page-footer__social {
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+
+// element copyright
+.page-footer__copyright {
+  padding: 22px 0;
+}

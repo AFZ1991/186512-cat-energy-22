@@ -1,0 +1,29 @@
+/* Block slider */
+
+// elemtnt list
+.slider__list {
+  margin-bottom: 13px;
+}
+
+// element control
+.slider-toggle__control {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic_black;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: "было";
+  }
+
+  &::after {
+    content: "стало";
+  }
+}
+
+// element checking
+.slider-toggle__checking {
+  background-color: $basic_green;
+}
