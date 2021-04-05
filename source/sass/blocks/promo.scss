@@ -7,9 +7,9 @@
 // element text
 .promo__text {
   text-align: center;
-  background-image: url("../../img/back/index-background-promo.jpg");
-  background-repeat: no-repeat;
   background-color: rgba($basic_green, 0.85);
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/index-background-promo.jpg");
+  background-repeat: no-repeat;
 }
 
 // element title
@@ -17,6 +17,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 // element slogan

@@ -8,18 +8,30 @@
 
 // element content
 .program-card__content {
+  position: relative;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   // mod slim
-  &--slim {
-    background-image: url("../../img/back/index-cat-slim.png");
+  &--slim::before {
+    width: 50px;
+    height: 53px;
+    background-image: url("/img/index-cat-slim.png");
     background-repeat: no-repeat;
   }
 
   // mod pro
-  &--pro {
-    background-image: url("../../img/back/index-cat-pro.png");
+  &--pro::before {
+    width: 67px;
+    height: 50px;
+    background-image: url("/img/index-cat-pro.png");
     background-repeat: no-repeat;
   }
 }
@@ -32,6 +44,7 @@
   font-weight: normal;
   text-transform: uppercase;
   padding-left: 91px;
+  margin: 0;
 }
 
 //element description
@@ -46,6 +59,11 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
+  color: $basic_black;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-right: 15px;
 }

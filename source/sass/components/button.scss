@@ -1,9 +1,11 @@
 /* Block button */
 .button {
+  display: block;
   color: var(--basic-white);
   font-family: $oswald;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   background-color: $basic_green;
 }

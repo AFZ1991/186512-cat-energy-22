@@ -1,0 +1,20 @@
+/* Block page-header__top */
+// elment top
+.page-header__top {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 767px;
+}
+
+// element link
+.logo__link {
+  display: inline-block;
+}
+
+// element nav
+.page-header__main-nav {
+  margin: auto;
+  width: 100%;
+  max-width: 767px;
+}

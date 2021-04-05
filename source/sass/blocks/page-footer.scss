@@ -1,11 +1,14 @@
 /* Block page-footer */
-.page-footer .wrapper {
-  background-color: $basic_grey;
+// element map
+.page-footer__map {
+  min-width: 320px;
+  padding: 0;
+  margin: auto;
 }
 
-.contacts__map {
-  margin: auto;
-  width: 320px;
+// element bottom
+.page-footer__bottom {
+  background-color: $basic_grey;
 }
 
 // element logo

@@ -1,5 +1,5 @@
 /* Block sample */
-.sample .wrapper {
+.sample {
   color: $basic_black;
   font-family: $oswald;
   background-color: $basic_grey-2;
@@ -27,6 +27,11 @@
 // element params-cat
 .sample__params-cat {
   margin-bottom: 20px;
+}
+
+// element termin
+.params-cat__termin {
+  text-transform: uppercase;
 }
 
 // element price

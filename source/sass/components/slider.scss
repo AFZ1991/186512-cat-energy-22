@@ -5,6 +5,13 @@
   margin-bottom: 13px;
 }
 
+// block toggle
+.slider-toggle {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 // element control
 .slider-toggle__control {
   font-family: $oswald;
@@ -13,14 +20,16 @@
   color: $basic_black;
   text-align: center;
   text-transform: uppercase;
+}
 
-  &::before {
-    content: "было";
-  }
+// element label-before
+.slider-toggle__label-before {
+  text-align: center;
+}
 
-  &::after {
-    content: "стало";
-  }
+// element label-after
+.slider-toggle__label-after {
+  text-align: center;
 }
 
 // element checking

@@ -21,11 +21,13 @@
 
 // element item
 .advantages__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 80px;
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
-  margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -33,8 +35,10 @@
 
   &::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
-    float: left;
     width: 60px;
     height: 60px;
     background-color: $basic_green;
@@ -44,24 +48,28 @@
 
 .advantages__item--nutrients {
   &::before {
-    background-image: url("../../img/back/icon-nutrients.svg");
+    background-image: url("/img/icon-nutrients.svg");
+    background-position: center;
   }
 }
 
 .advantages__item--consistence {
   &::before {
-    background-image: url("../../img/back/icon-consistence.svg");
+    background-image: url("/img/icon-consistence.svg");
+    background-position: center;
   }
 }
 
 .advantages__item--substitute {
   &::before {
-    background-image: url("../../img/back/icon-substitute.svg");
+    background-image: url("/img/icon-substitute.svg");
+    background-position: center;
   }
 }
 
 .advantages__item--period {
   &::before {
-    background-image: url("../../img/back/icon-period.svg");
+    background-image: url("/img/icon-period.svg");
+    background-position: center;
   }
 }
