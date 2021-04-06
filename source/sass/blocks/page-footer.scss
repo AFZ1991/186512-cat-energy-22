@@ -1,9 +1,7 @@
 /* Block page-footer */
 // element map
 .page-footer__map {
-  min-width: 320px;
-  padding: 0;
-  margin: auto;
+  height: 362px;
 }
 
 // element bottom
@@ -13,6 +11,7 @@
 
 // element logo
 .page-footer__logo {
+  display: block;
   padding-top: 39px;
   padding-bottom: 32px;
 }

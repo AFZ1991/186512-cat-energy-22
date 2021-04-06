@@ -1,6 +1,7 @@
 /* Block advantages */
 .advantages {
   padding-top: 7px;
+  padding-bottom: 42px;
 }
 
 // element title
@@ -13,15 +14,10 @@
   margin-bottom: 38px;
 }
 
-// element list
-.advantages__list {
-  margin: 0;
-  margin-bottom: 42px;
-}
-
 // element item
 .advantages__item {
   position: relative;
+  min-height: 60px;
   margin-bottom: 20px;
   padding-left: 80px;
   font-family: $arial;
