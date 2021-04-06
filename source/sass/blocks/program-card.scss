@@ -1,0 +1,69 @@
+/* Block program-card */
+.program-card {
+  color: $basic_black;
+  font-family: $arial;
+  background-color: $basic_grey;
+  padding: 30px 20px 22px 20px;
+}
+
+// element content
+.program-card__content {
+  position: relative;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // mod slim
+  &--slim::before {
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/index-cat-slim.png");
+    background-repeat: no-repeat;
+  }
+
+  // mod pro
+  &--pro::before {
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/index-cat-pro.png");
+    background-repeat: no-repeat;
+  }
+}
+
+// element title
+.program-card__title {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-left: 91px;
+  margin: 0;
+}
+
+//element description
+.program-card__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+// element link
+.program-card__link {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic_black;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-right: 15px;
+}

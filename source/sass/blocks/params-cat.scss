@@ -1,0 +1,21 @@
+/* Block params-cat */
+.params-cat {
+  color: $basic_black;
+  font-family: $oswald;
+}
+
+// element termin
+.params-cat__termin {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+// element description
+.params-cat__description {
+  color: $special_dark-grey;
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}

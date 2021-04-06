@@ -1,0 +1,44 @@
+/* Block sample */
+.sample {
+  color: $basic_black;
+  font-family: $oswald;
+  background-color: $basic_grey-2;
+  padding-top: 27px;
+}
+
+// element title
+.sample__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+// element description
+.sample__description {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  margin-bottom: 25px;
+}
+
+// element params-cat
+.sample__params-cat {
+  margin-bottom: 20px;
+}
+
+// element termin
+.params-cat__termin {
+  text-transform: uppercase;
+}
+
+// element price
+.sample__price {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}

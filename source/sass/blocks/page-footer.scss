@@ -1,0 +1,28 @@
+/* Block page-footer */
+// element map
+.page-footer__map {
+  height: 362px;
+}
+
+// element bottom
+.page-footer__bottom {
+  background-color: $basic_grey;
+}
+
+// element logo
+.page-footer__logo {
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 32px;
+}
+
+// element social
+.page-footer__social {
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+
+// element copyright
+.page-footer__copyright {
+  padding: 22px 0;
+}

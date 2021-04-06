@@ -1,0 +1,71 @@
+/* Block advantages */
+.advantages {
+  padding-top: 7px;
+  padding-bottom: 42px;
+}
+
+// element title
+.advantages__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  color: $basic_black;
+  margin-bottom: 38px;
+}
+
+// element item
+.advantages__item {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--nutrients {
+  &::before {
+    background-image: url("../img/icon-nutrients.svg");
+    background-position: center;
+  }
+}
+
+.advantages__item--consistence {
+  &::before {
+    background-image: url("../img/icon-consistence.svg");
+    background-position: center;
+  }
+}
+
+.advantages__item--substitute {
+  &::before {
+    background-image: url("../img/icon-substitute.svg");
+    background-position: center;
+  }
+}
+
+.advantages__item--period {
+  &::before {
+    background-image: url("../img/icon-period.svg");
+    background-position: center;
+  }
+}

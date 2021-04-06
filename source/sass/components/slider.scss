@@ -1,0 +1,38 @@
+/* Block slider */
+
+// elemtnt list
+.slider__list {
+  margin-bottom: 13px;
+}
+
+// block toggle
+.slider-toggle {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+// element control
+.slider-toggle__control {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic_black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// element label-before
+.slider-toggle__label-before {
+  text-align: center;
+}
+
+// element label-after
+.slider-toggle__label-after {
+  text-align: center;
+}
+
+// element checking
+.slider-toggle__checking {
+  background-color: $basic_green;
+}

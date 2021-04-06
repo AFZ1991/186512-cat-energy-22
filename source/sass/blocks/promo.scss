@@ -1,0 +1,28 @@
+/* Block promo */
+.promo {
+  color: $basic-white;
+  font-family: $oswald;
+}
+
+// element text
+.promo__text {
+  text-align: center;
+  background-color: rgba($basic_green, 0.85);
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-promo.jpg");
+  background-repeat: no-repeat;
+}
+
+// element title
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+// element slogan
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
