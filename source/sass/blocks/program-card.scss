@@ -23,7 +23,7 @@
   &--slim::before {
     width: 50px;
     height: 53px;
-    background-image: url("/img/index-cat-slim.png");
+    background-image: url("../img/index-cat-slim.png");
     background-repeat: no-repeat;
   }
 
@@ -31,7 +31,7 @@
   &--pro::before {
     width: 67px;
     height: 50px;
-    background-image: url("/img/index-cat-pro.png");
+    background-image: url("../img/index-cat-pro.png");
     background-repeat: no-repeat;
   }
 }
