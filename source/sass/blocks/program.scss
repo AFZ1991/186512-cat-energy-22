@@ -1,0 +1,30 @@
+/* Block program */
+.program {
+  border-top: 1px solid #d9d9d9;
+}
+
+.program .wrapper {
+  padding-top: 27px;
+  padding-bottom: 39px;
+}
+
+// element title
+.program__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: $basic_black;
+  margin-bottom: 37px;
+}
+
+// element annotation
+.program__annotation {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $basic_black;
+  margin: 0;
+}

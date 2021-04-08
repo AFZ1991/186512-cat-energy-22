@@ -4,8 +4,13 @@
 }
 
 // block wrapper
-.contacts .wrapper {
+.contacts.wrapper {
   padding-bottom: 28px;
+}
+
+// modificator theme_grey
+.contacts--theme_grey {
+  background-color: $basic_grey;
 }
 
 // element lead
