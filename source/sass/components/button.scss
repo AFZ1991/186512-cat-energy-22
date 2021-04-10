@@ -4,14 +4,20 @@
   color: $basic_white;
   font-family: $oswald;
   text-align: center;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: $basic_green;
-}
-
-.form__button.button {
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic_green;
+
+  &--promo {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--load {
+    background-color: $basic_grey;
+    color: $special_dark-grey;
+  }
 }

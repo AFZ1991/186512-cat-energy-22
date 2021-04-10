@@ -1,0 +1,14 @@
+/* Block banner */
+.banner {
+  background: url("../img/catalog-background-banner.jpg") no-repeat;
+  background-position: center 0;
+  height: 289px;
+}
+
+.banner__promo {
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic_white;
+}
