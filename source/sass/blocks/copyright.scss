@@ -1,4 +1,15 @@
 /* Block copyright */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+}
+
 // element site
 .copyright__site {
   font-family: $arial;

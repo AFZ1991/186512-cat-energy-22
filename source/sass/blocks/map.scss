@@ -1,0 +1,12 @@
+/* Block map */
+.map__content {
+  display: block;
+  height: 362px;
+  min-width: 320px;
+  width: 100%;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}

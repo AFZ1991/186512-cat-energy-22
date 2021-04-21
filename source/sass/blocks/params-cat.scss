@@ -2,6 +2,44 @@
 .params-cat {
   color: $basic_black;
   font-family: $oswald;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.params-cat__list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.params-cat__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid $special_grey;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 // element termin
@@ -9,6 +47,11 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 // element description
@@ -17,5 +60,23 @@
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  position: absolute;
+  width: 80px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  background: $basic_grey-2;
+
+  @media (min-width: $tablet-width) {
+    background: $basic_white;
+    font-size: 14px;
+    line-height: 14px;
+    bottom: -5px;
+    width: 140px;
+  }
 }

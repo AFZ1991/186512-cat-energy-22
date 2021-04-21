@@ -6,4 +6,17 @@
   width: 100%;
   min-width: 320px;
   max-width: 767px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    width: 100%;
+    min-width: $tablet-width;
+    max-width: $desktop-width - 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    min-width: $desktop-width;
+    max-width: 100%;
+  }
 }

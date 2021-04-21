@@ -1,17 +1,28 @@
 /* Block page-footer */
+.page-footer__top {
+  position: relative;
+}
+
 // element map
 .page-footer__map {
-  height: 362px;
+  margin: 0;
 }
 
 // element bottom
 .page-footer__bottom {
   background-color: $basic_grey;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 // element logo
 .page-footer__logo {
-  display: block;
   padding-top: 39px;
   padding-bottom: 32px;
 }

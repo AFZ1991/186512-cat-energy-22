@@ -2,6 +2,10 @@
 .advantages {
   padding-top: 7px;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special_grey-3;
+  }
 }
 
 // element title
@@ -12,10 +16,30 @@
   font-weight: normal;
   color: $basic_black;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.advantages__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 // element item
 .advantages__item {
+  display: block;
   position: relative;
   min-height: 60px;
   margin-bottom: 20px;
@@ -39,6 +63,40 @@
     height: 60px;
     background-color: $basic_green;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 42px;
+    }
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: normal;
+      color: $basic_grey;
+      top: 0;
+      left: 126px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 160px;
+    padding-bottom: 60px;
+    width: 245px;
+    height: 280px;
   }
 }
 
@@ -47,12 +105,20 @@
     background-image: url("../img/icon-nutrients.svg");
     background-position: center;
   }
+
+  &::after {
+    content: "1";
+  }
 }
 
 .advantages__item--consistence {
   &::before {
     background-image: url("../img/icon-consistence.svg");
     background-position: center;
+  }
+
+  &::after {
+    content: "2";
   }
 }
 
@@ -61,11 +127,19 @@
     background-image: url("../img/icon-substitute.svg");
     background-position: center;
   }
+
+  &::after {
+    content: "3";
+  }
 }
 
 .advantages__item--period {
   &::before {
     background-image: url("../img/icon-period.svg");
     background-position: center;
+  }
+
+  &::after {
+    content: "4";
   }
 }

@@ -1,5 +1,18 @@
 /* Block program-type */
+.program-type {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
 // element item
 .program-type__item {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
