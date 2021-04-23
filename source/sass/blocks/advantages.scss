@@ -32,8 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
   }
 }
 
@@ -97,6 +97,10 @@
     padding-bottom: 60px;
     width: 245px;
     height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
   }
 }
 

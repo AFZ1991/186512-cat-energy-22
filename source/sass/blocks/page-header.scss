@@ -1,10 +1,23 @@
 /* Block page-header__top */
 .page-header {
-  outline: 5px solid rgba(255, 250, 0, 0.8);
-  outline-offset: -5px;
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  position: relative;
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: end top;
+      background-size: cover;
+    }
+  }
 }
 
 // elment top
@@ -13,8 +26,6 @@
   margin: auto;
   width: 100%;
   min-width: 320px;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     display: flex;

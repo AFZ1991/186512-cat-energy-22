@@ -29,8 +29,6 @@
   padding-top: 27px;
   margin: auto;
   z-index: 100;
-  outline: 5px solid rgba(100, 250, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -39,10 +37,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 694px;
-    background-position: end top;
+    background: none;
   }
 }
 
@@ -84,16 +79,12 @@
 .promo__image-wrapper {
   position: relative;
   margin-top: 220px;
-  outline: 5px solid rgba(220, 100, 100, 0.8);
-  outline-offset: -5px;
 }
 
 .promo__image {
   display: block;
   margin: auto;
   margin-top: -310px;
-  outline: 5px solid rgba(120, 200, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 709px;
