@@ -1,5 +1,16 @@
 /* Block program-type */
+.program-type {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 // element item
 .program-type__item {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }

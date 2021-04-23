@@ -1,16 +1,32 @@
 /* Block contacts */
-.contacts {
-  padding-top: 28px;
-}
-
-// block wrapper
-.contacts.wrapper {
-  padding-bottom: 28px;
-}
-
 // modificator theme_grey
 .contacts--theme_grey {
   background-color: $basic_grey;
+}
+
+.contacts__description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: start;
+  align-items: center;
+  height: 114px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 570px;
+    height: 201px;
+    background: $basic_white;
+  }
 }
 
 // element lead
@@ -20,12 +36,25 @@
   line-height: 18px;
   color: $special_dark-grey-3;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    max-width: 175px;
+  }
 }
 
 // element address
 .contacts__address {
   font-family: $arial;
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 160px;
+  }
 }

@@ -16,7 +16,7 @@
         </a>
 
         <!-- навигация по сайту -->
-        <nav class="page-header__main-nav main-nav">
+        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list site-list list-reset">
             <li class="site-list__item site-list__item--active">
@@ -34,14 +34,14 @@
 
       <!-- Раздел "промо" -->
       <section class="promo">
-        <div class="promo__text">
-          <h1 class="promo__title">функциональное питание для котов</h1>
+        <div class="promo__content">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__slogan">занялся собой? займись котом!</p>
+          <a class="button button--promo" href="program.html">подобрать программу</a>
         </div>
         <div class="promo__image-wrapper">
           <img class="promo__image" src="img/cat-energy.png" alt="Изображение стакана с кошачьим кормом" width="280" height="270">
         </div>
-        <a href="program.html" class="button button--promo">подобрать программу</a>
       </section>
     </header>
 
@@ -91,36 +91,37 @@
           <h2 class="sample__title">Живой пример</h2>
           <p class="sample__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-          <dl class="sample__params-cat params-cat list-reset">
-            <div class="params-cat__container">
-              <dt class="params-cat__termin">5 кг</dt>
-              <dd class="params-cat__description">снижение веса</dd>
-            </div>
-            <div class="params-cat__container">
-              <dt class="params-cat__termin">60 дней</dt>
-              <dd class="params-cat__description">затрачено времени</dd>
-            </div>
-          </dl>
-
-          <p class="sample__price">затраты на питание:
-            <span>15 000 руб.</span>
-          </p>
+          <div class="sample__params-cat params-cat">
+            <dl class="params-cat__list list-reset">
+              <div class="params-cat__container">
+                <dt class="params-cat__termin">5 кг</dt>
+                <dd class="params-cat__description">снижение веса</dd>
+              </div>
+              <div class="params-cat__container">
+                <dt class="params-cat__termin">60 дней</dt>
+                <dd class="params-cat__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="sample__price">затраты на питание:
+              <span>15 000 руб.</span>
+            </p>
+          </div>
 
           <div class="sample__slider slider">
             <ul class="slider__list list-reset">
               <li class="slider-item slide slide--cat-fat">
                 <img class="slider-item__picture" src="img/index-slider-before.png" alt="Фотография толстого кота до начала курса приема питания cat energy" width="311" height="232">
               </li>
-              <li class="slider-item slide slide--cat-skinny">
+              <li class="slider-item slide slide--cat-skinny hidden">
                 <img class="slider-item__picture" src="img/index-slider-after.png" alt="Фотография стройного кота после окончания курса приема питания cat energy" width="251" height="240">
               </li>
             </ul>
             <div class="slider-toggle">
-              <span class="slider-toggle__label-before">Было</span>
+              <span class="slider-toggle__label slider-toggle__label--before">Было</span>
               <div class="slider-toggle__control">
-                <div class="slider-toggle__checking"></div>
+                <div class="slider-toggle__button"></div>
               </div>
-              <span class="slider-toggle__label-after">Стало</span>
+              <span class="slider-toggle__label slider-toggle__label--after">Стало</span>
             </div>
           </div>
         </div>
@@ -130,17 +131,19 @@
     <!-- Подвал страницы -->
     <footer class="page-footer">
       <!-- раздел контактов -->
-      <section class="page-footer__contacts contacts wrapper">
-        <div class="contacts__description">
+      <section class="page-footer__top">
+        <div class="page-footer__contacts contacts wrapper">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__lead">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <div class="contacts__description">
+            <p class="contacts__lead">приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+        </div>
+        <!-- карта -->
+        <div class="page-footer__map map">
+          <img class="map__content" src="img/location.jpg" alt="Локация нашей организации на карте по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="320" height="362">
         </div>
       </section>
-      <!-- карта -->
-      <div class="page-footer__map map">
-        <img class="map__content" src="img/location.jpg" alt="Локация нашей организации на карте по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="320" height="362">
-      </div>
       <!-- раздел ссылок -->
       <div class="page-footer__bottom wrapper">
         <a class="page-footer__logo logo" aria-label="Cat Energy">

@@ -1,6 +1,10 @@
 /* Block button */
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  margin: auto;
   color: $basic_white;
   font-family: $oswald;
   text-align: center;
@@ -14,6 +18,19 @@
   &--promo {
     font-size: 14px;
     line-height: 18px;
+    height: 40px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      color: $basic_white;
+      width: 244px;
+      height: 54px;
+      z-index: 100;
+      margin: 0;
+      margin-left: 82px;
+    }
   }
 
   &--load {
