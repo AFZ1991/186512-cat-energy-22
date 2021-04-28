@@ -1,11 +1,13 @@
 /* Block promo */
 .promo {
+  position: relative;
   color: $basic-white;
   font-family: $oswald;
-  margin-bottom: 40px;
+  min-height: 480px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    min-height: 830px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,23 +16,26 @@
     grid-template-columns: auto 1fr;
     padding-left: 80px;
     align-content: start;
+    min-height: 550px;
   }
 }
 
 // element content
 .promo__content {
-  position: relative;
+
   display: block;
+  min-height: 302px;
   text-align: center;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-size: cover;
   background-position: center top;
-  padding-top: 27px;
+  padding: 27px 20px;
   margin: auto;
-  z-index: 100;
+
 
   @media (min-width: $tablet-width) {
+    padding: 41px 0;
     background-image: none;
     text-align: left;
   }
@@ -65,7 +70,6 @@
   line-height: 14px;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 302px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -77,17 +81,49 @@
 }
 
 .promo__image-wrapper {
-  position: relative;
-  margin-top: 220px;
-}
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 270px;
 
-.promo__image {
-  display: block;
-  margin: auto;
-  margin-top: -310px;
-
-  @media (min-width: $tablet-width) {
+  @media (min-width: 768px) {
     width: 709px;
     height: 609px;
+    bottom: 0;
+  }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    width: 550px;
+    height: 500px;
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
+}
+
+.promo__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 280px;
+  font-size: 14px;
+  line-height: 18px;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: auto;
+    z-index: 1;
+    width: 244px;
+    margin: 0;
+    margin-left: 82px;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic_white;
+    transform: none;
   }
 }

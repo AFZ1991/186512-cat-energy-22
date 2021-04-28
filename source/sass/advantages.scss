@@ -18,6 +18,7 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 14px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -26,14 +27,15 @@
 .advantages__list {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-row-gap: 37px;
+    padding-top: 34px;
+    gap: 91px 132px;
+    grid-template-columns: repeat(2, 250px);
+    counter-reset: list;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
+    column-gap: 75px;
+    grid-template-columns: repeat(4, auto);
   }
 }
 
@@ -48,6 +50,16 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 112px;
+    padding-bottom: 42px;
+    width: 250px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -67,40 +79,22 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      top: 42px;
     }
   }
 
   &::after {
-    display: none;
-    position: absolute;
-    z-index: -1;
-
     @media (min-width: $tablet-width) {
-      display: block;
-      font-family: $oswald;
+      content: counter(list);
+      position: absolute;
+      top: 45%;
+      left: 118px;
+      z-index: -1;
       font-size: 280px;
-      line-height: 280px;
-      font-weight: normal;
-      color: $basic_grey;
-      top: 0;
-      left: 126px;
+      font-family: $oswald;
+      color: #f2f2f2;
+      transform: translateY(-50%);
+      counter-increment: list;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 0;
-    padding-left: 0;
-    padding-top: 160px;
-    padding-bottom: 60px;
-    width: 245px;
-    height: 280px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 250px;
   }
 }
 
@@ -109,20 +103,12 @@
     background-image: url("../img/icon-nutrients.svg");
     background-position: center;
   }
-
-  &::after {
-    content: "1";
-  }
 }
 
 .advantages__item--consistence {
   &::before {
     background-image: url("../img/icon-consistence.svg");
     background-position: center;
-  }
-
-  &::after {
-    content: "2";
   }
 }
 
@@ -131,19 +117,11 @@
     background-image: url("../img/icon-substitute.svg");
     background-position: center;
   }
-
-  &::after {
-    content: "3";
-  }
 }
 
 .advantages__item--period {
   &::before {
     background-image: url("../img/icon-period.svg");
     background-position: center;
-  }
-
-  &::after {
-    content: "4";
   }
 }
