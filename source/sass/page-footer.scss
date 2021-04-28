@@ -3,6 +3,12 @@
   position: relative;
 }
 
+.page-footer__contacts {
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 // element map
 .page-footer__map {
   margin: 0;

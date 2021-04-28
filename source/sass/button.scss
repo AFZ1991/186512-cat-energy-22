@@ -1,0 +1,21 @@
+/* Block button */
+.button {
+  display: block;
+  width: 280px;
+  margin: auto;
+  padding: 10px;
+  color: $basic_white;
+  font-family: $oswald;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic_green;
+
+  &--load {
+    background-color: $basic_grey;
+    color: $special_dark-grey;
+  }
+}

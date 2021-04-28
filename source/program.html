@@ -35,7 +35,7 @@
 
     <!-- Основное содержимое -->
     <main class="page-main program">
-      <div class="wrapper">
+      <div class="wrapper wrapper--program">
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__annotation">заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
@@ -129,28 +129,29 @@
           </ul>
         </fieldset>
 
-        <div class="wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--button">
           <button class="button" type="submit">отправить заявку</button>
+          <p class="program__note"><sup>*</sup> - Обязательные поля</p>
         </div>
-
-        <p class="program__note"><sup>*</sup> - Обязательные поля</p>
       </form>
     </main>
 
     <!-- Подвал страницы -->
     <footer class="page-footer">
       <!-- раздел контактов -->
-      <section class="page-footer__contacts contacts contacts--theme_grey wrapper">
-        <div class="contacts__description">
+      <section class="page-footer__top">
+        <div class="page-footer__contacts contacts contacts--theme_grey wrapper wrapper--program">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__lead">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <div class="contacts__description">
+            <p class="contacts__lead">приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+        </div>
+        <!-- карта -->
+        <div class="page-footer__map map">
+          <img class="map__content" src="img/location.jpg" alt="Локация нашей организации на карте по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="320" height="362">
         </div>
       </section>
-      <!-- карта -->
-      <div class="page-footer__map map">
-        <img class="map__content" src="img/location.jpg" alt="Локация нашей организации на карте по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8" width="320" height="362">
-      </div>
       <!-- раздел ссылок -->
       <div class="page-footer__bottom wrapper">
         <a class="page-footer__logo logo" href="index.html" aria-label="Cat Energy">
