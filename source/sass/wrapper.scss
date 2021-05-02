@@ -5,12 +5,12 @@
   padding: 0 20px;
   width: 100%;
   min-width: 320px;
-  max-width: 767px;
+  //max-width: 767px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     width: 100%;
-    max-width: $desktop-width;
+    //max-width: $desktop-width;
   }
 
   @media (min-width: $desktop-width) {
