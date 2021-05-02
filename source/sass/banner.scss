@@ -1,14 +1,57 @@
 /* Block banner */
 .banner {
   background: url("../img/catalog-background-banner.jpg") no-repeat;
-  background-position: center 0;
+  background-position: center center;
+  background-size: cover;
   height: 289px;
+  display: grid;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+.banner svg {
+  margin: auto;
+  margin-top: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+  }
 }
 
 .banner__promo {
+  width: 161px;
   font-family: $arial;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $basic_white;
+  margin: 0;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    margin-top: 0;
+    align-self: start;
+  }
 }

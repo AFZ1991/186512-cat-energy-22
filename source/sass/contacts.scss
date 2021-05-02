@@ -38,10 +38,11 @@
   line-height: 18px;
   color: $special_dark-grey-3;
   text-transform: uppercase;
+  max-width: 80%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 22px;
     max-width: 175px;
   }
 }
@@ -55,8 +56,18 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    display: block;
     font-size: 16px;
     line-height: 20px;
-    max-width: 160px;
+    width: 160px;
+    text-align: right;
+  }
+}
+
+.contacts__address span {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
   }
 }

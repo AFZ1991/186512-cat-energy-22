@@ -19,7 +19,9 @@
   background-color: $basic_grey;
   display: block;
   text-align: center;
+}
 
+.page-footer__bottom-container {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
