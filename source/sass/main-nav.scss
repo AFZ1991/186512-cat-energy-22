@@ -12,11 +12,25 @@
 
 .main-nav__toggle {
   display: block;
-  width: 65px;
-  height: 65px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $basic_black;
+    width: 24px;
+    height: 1.5px;
+    margin: auto;
+    box-shadow: 0 7px 0 $basic_black, 0 -7px 0 $basic_black;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

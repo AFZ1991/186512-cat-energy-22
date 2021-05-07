@@ -18,7 +18,7 @@
         <!-- навигация по сайту -->
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="main-nav__list site-list list-reset">
+          <ul class="main-nav__list site-list site-list--index list-reset">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link site-list__link--main">главная</a>
             </li>
@@ -109,17 +109,21 @@
 
           <div class="sample__slider slider">
             <ul class="slider__list list-reset">
-              <li class="slider-item slide slide--cat-fat">
+              <li class="slider-item">
                 <img class="slider-item__picture" src="img/index-slider-before.png" alt="Фотография толстого кота до начала курса приема питания cat energy" width="311" height="232">
               </li>
-              <li class="slider-item slide slide--cat-skinny hidden">
+              <li class="slider-item slider-item--after hidden">
                 <img class="slider-item__picture" src="img/index-slider-after.png" alt="Фотография стройного кота после окончания курса приема питания cat energy" width="251" height="240">
               </li>
             </ul>
             <div class="slider-toggle">
               <span class="slider-toggle__label slider-toggle__label--before">Было</span>
-              <div class="slider-toggle__control">
-                <div class="slider-toggle__button"></div>
+              <div class="slider-toggle__scale">
+                <div class="slider-toggle__group">
+                  <input class="slider-toggle__input" type="range" min="0" max="100" step="1" value="0">
+                  <span class="visually-hidden">Пропорции</span>
+                  <span class="slider-toggle__button" style="left: 50%;"></span>
+                </div>
               </div>
               <span class="slider-toggle__label slider-toggle__label--after">Стало</span>
             </div>
@@ -163,7 +167,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="https://www.facebook.com/htmlacademy" class="social__link" aria-label="Мы в Фейсбуке">
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb" aria-label="Мы в Фейсбуке">
                 <svg class="social__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 1.833h-2.75a4.63 4.63 0 00-3.24 1.317 4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596h-3.667V6.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V1.833z" stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </li>

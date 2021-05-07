@@ -306,6 +306,18 @@
   &-phone {
     background-image: url("../img/icon-phone.svg");
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &--error {
+    border: 2px solid $status_error;
+  }
 }
 
 .form__options + .form__label::before {
@@ -323,6 +335,22 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+  }
+}
+
+.form__options:hover + .form__label::before {
+  border-color: #bababa;
+}
+
+.form__options:disabled + .form__label {
+  opacity: 0.3;
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    opacity: 0.3;
   }
 }
 
