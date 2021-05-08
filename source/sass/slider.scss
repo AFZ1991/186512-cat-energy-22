@@ -154,7 +154,7 @@
   background-color: $basic_green;
   border: 13px solid $basic_white;
   border-radius: 50%;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 16%);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
   z-index: 10;
 
   @media (min-width: $tablet-width) {
@@ -162,11 +162,11 @@
   }
 
   &:hover {
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 19%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
