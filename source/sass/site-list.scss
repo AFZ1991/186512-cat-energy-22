@@ -22,19 +22,29 @@
   width: 100%;
   height: 66px;
   border-bottom: 1px solid $special_grey-3;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    border-bottom: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &--active {
       border-bottom: 2px solid $basic_green;
     }
   }
+}
 
+.site-list--index .site-list__item--active {
   @media (min-width: $desktop-width) {
-    &--active {
-      border-bottom: 2px solid $basic_white;
-    }
+    border-bottom: 2px solid $basic_white;
   }
 }
 

@@ -2,17 +2,74 @@
 
 .slider {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
 }
 
 // elemtnt list
 .slider__list {
-  margin-bottom: 23px;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 26px;
+  position: relative;
+  display: table;
+  width: 280px;
+  height: 240px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    height: 634px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.slider-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    background-color: transparent;
+  }
+
+  &--after {
+    width: 0;
+
+    @media (min-width: $tablet-width) {
+      overflow: hidden;
+    }
+  }
 }
 
 .slider-item__picture {
+  height: 240px;
+
   @media (min-width: $tablet-width) {
     height: 520px;
-    object-fit: cover;
+    object-fit: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    //margin-top: 24px;
   }
 }
 
@@ -21,35 +78,98 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  height: 40px;
-  margin: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-// element control
-.slider-toggle__control {
-  width: 84px;
-  height: 14px;
-  border: 1px solid $special_grey;
-  border-radius: 6px;
-  background-color: $basic_white;
-  margin-left: 12px;
-  margin-right: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px;
+  user-select: none;
 
   @media (min-width: $tablet-width) {
-    width: 428px;
-    height: 6px;
-    background-color: #dcdcdc;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 486px;
+    bottom: auto;
   }
 }
 
-// element label-before
+// element control
+.slider-toggle__scale {
+  position: relative;
+  display: none;
+  width: 402px;
+  height: 6px;
+  margin: 6px 35px;
+  z-index: 1;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -13px;
+    bottom: 0;
+    left: -13px;
+    background-color: #dcdcdc;
+    border-radius: 2px;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+    }
+  }
+}
+
+.slider-toggle__group {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.slider-toggle__input {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  z-index: 1;
+  width: 394px;
+  height: 34px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.slider-toggle__button {
+  position: absolute;
+  top: -1px;
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+  margin: -13px 0 0 -13px;
+  background-color: $basic_green;
+  border: 13px solid $basic_white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
 .slider-toggle__label {
   font-family: $oswald;
   font-size: 16px;
@@ -57,17 +177,80 @@
   color: $basic_black;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  max-width: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted #c4c4c4;
+    padding: 0 0 4px;
+    max-width: 150px;
   }
-}
 
-// element checking
-.slider-toggle__button {
-  background-color: $basic_green;
-  width: 35px;
-  height: 6px;
-  border-radius: 6px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    width: 41px;
+    height: 12px;
+    background-color: $basic_white;
+    border: 1px solid $special_grey;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    width: 35px;
+    height: 6px;
+    background-color: $basic_green;
+    border-radius: 5px;
+  }
+
+  &--before {
+    padding-right: 60px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
+
+    &::before {
+      right: 0;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    &::after {
+      content: "";
+      right: 0;
+
+      @media (min-width: $tablet-width) {
+        content: none;
+      }
+    }
+  }
+
+  &--after {
+    padding-left: 60px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
+
+    &::before {
+      left: 0;
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+    }
+
+    &::after {
+      left: 0;
+    }
+  }
 }

@@ -14,8 +14,26 @@
   text-decoration: none;
   background-color: $basic_green;
 
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    background-color: $basic_green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--load {
     background-color: $basic_grey;
     color: $special_dark-grey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }

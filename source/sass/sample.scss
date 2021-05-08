@@ -3,15 +3,18 @@
   color: $basic_black;
   font-family: $oswald;
   background-color: $basic_grey-2;
-  padding-top: 27px;
+  padding-top: 10px;
+  padding-bottom: 36px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding: 42px 0 0;
     background: linear-gradient(180deg, rgb(255, 255, 255) 57%, rgb(234, 234, 234) 43%);
   }
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(180deg, rgb(255, 255, 255) 32%, rgb(234, 234, 234) 32%);
+    padding-bottom: 72px;
   }
 }
 
@@ -34,12 +37,13 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    margin-bottom: 75px;
+    margin-bottom: 76px;
+    padding-top: 40px;
   }
 }
 
@@ -54,13 +58,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
+    margin-top: 0;
+    margin-bottom: 56px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    margin-bottom: 69px;
-    margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 
@@ -69,7 +74,7 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 256px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,23 +83,21 @@
   }
 }
 
-// element termin
-.params-cat__termin {
-  text-transform: uppercase;
-}
-
 // element price
 .sample__price {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 34px;
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     width: 190px;
     text-align: right;
+    margin: 0;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,6 +109,10 @@
 }
 
 .sample__price span {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 63px;
   }

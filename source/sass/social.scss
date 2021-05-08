@@ -14,7 +14,7 @@
 }
 
 .social__item {
-  margin-left: 35px;
+  margin-left: 36px;
 
   &:first-child {
     margin-left: 0;
@@ -23,4 +23,18 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+}
+
+.social__link:hover path {
+  stroke: none;
+  fill: $basic_green;
+}
+
+.social__link--fb:hover path {
+  fill: none;
+  stroke: $basic_green;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }

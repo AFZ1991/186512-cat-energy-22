@@ -158,15 +158,44 @@
   font-size: 16px;
   line-height: 16px;
   color: $basic_black;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: 150px;
   position: relative;
-  padding-right: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    width: 170px;
   }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: $basic_black;
+    order: 2;
+    margin-left: 25px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    order: 3;
+    border: 5px solid transparent;
+    border-left: 5px solid $basic_black;
+  }
+}
+
+.program-card__link:hover {
+  &::before {
+    width: 26px;
+  }
+}
+
+.program-card__link:active {
+  opacity: 0.3;
 }

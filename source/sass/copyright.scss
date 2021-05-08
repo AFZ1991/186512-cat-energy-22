@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     width: 163px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 // element site
@@ -16,4 +20,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+}
+
+.copyright:hover path {
+  fill: $basic_green;
 }
