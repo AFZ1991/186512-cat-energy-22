@@ -22,11 +22,10 @@
 
 // element content
 .promo__content {
-
   display: block;
   min-height: 302px;
   text-align: center;
-  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-mobile.jpg");
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/back-promo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -43,6 +42,18 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     background: none;
+  }
+}
+
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx),
+  (min-resolution: 2dppx) {
+  .promo__content {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/back-promo-mobile@2x.jpg");
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
   }
 }
 
@@ -88,13 +99,13 @@
   width: 280px;
   height: 270px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
     bottom: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     position: relative;
     width: 550px;
     height: 500px;
