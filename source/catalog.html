@@ -47,7 +47,7 @@
         <h1 class="catalog__title">Каталог продукции</h1>
       </div>
       <!-- Основные товары -->
-      <section class="catalog__main wrapper">
+      <section class="catalog__main">
         <h2 class="visually-hidden">Основные товары</h2>
         <div class="catalog__list">
           <article class="catalog__item catalog__item--left" id="pro">
@@ -64,7 +64,7 @@
                 </dl>
                 <img class="catalog__good-image catalog__good-image--little" src="img/good_chicken_500.png" alt="Маленький оранжевый стакан корма Cat Energy Pro со вкусом курицы" width="68" height="86">
               </div>
-              <a class="button" href="#">заказать</a>
+              <a class="button button__catalog" href="#">заказать</a>
             </div>
           </article>
           <article class="catalog__item catalog__item--right">
@@ -81,7 +81,7 @@
                 </dl>
                 <img class="catalog__good-image catalog__good-image--big" src="img/good_chicken_1000.png" alt="Большой оранжевый стакан корма Cat Energy Pro со вкусом курицы" width="84" height="100">
               </div>
-              <a class="button" href="#">заказать</a>
+              <a class="button button__catalog" href="#">заказать</a>
             </div>
           </article>
           <article class="catalog__item catalog__item--left">
@@ -98,7 +98,7 @@
                 </dl>
                 <img class="catalog__good-image catalog__good-image--little" src="img/good_fish_500.png" alt="Маленький зеленый стакан корма Cat Energy Pro со вкусом рыбы" width="68" height="78">
                 </div>
-              <a class="button" href="#">заказать</a>
+              <a class="button button__catalog" href="#">заказать</a>
             </div>
           </article>
           <article class="catalog__item catalog__item--right">
@@ -115,7 +115,7 @@
                 </dl>
                 <img class="catalog__good-image catalog__good-image--big" src="img/good_fish_1000.png" alt="Большой зеленый стакан корма Cat Energy Pro со вкусом рыбы" width="84" height="100">
               </div>
-              <a class="button" href="#">заказать</a>
+              <a class="button button__catalog" href="#">заказать</a>
             </div>
           </article>
           <article class="catalog__item catalog__item--left" id="slim">
@@ -132,7 +132,7 @@
                 </dl>
                 <img class="catalog__good-image catalog__good-image--little" src="img/good_buckwheat_500.png" alt="Маленький синий стакан корма Cat Energy Slim со вкусом гречки" width="68" height="78">
               </div>
-              <a class="button" href="#">заказать</a>
+              <a class="button button__catalog" href="#">заказать</a>
             </div>
           </article>
           <article class="catalog__item catalog__item--right">
@@ -149,7 +149,7 @@
                 </dl>
                 <img class="catalog__good-image catalog__good-image--big" src="img/good_buckwheat_1000.png" alt="Большой синий стакан корма Cat Energy Slim со вкусом гречки" width="84" height="100">
               </div>
-              <a class="button" href="#">заказать</a>
+              <a class="button button__catalog" href="#">заказать</a>
             </div>
           </article>
           <article class="catalog__item catalog__item--left">
@@ -166,7 +166,7 @@
                 </dl>
                 <img class="catalog__good-image catalog__good-image--little" src="img/good_rice_500.png" alt="Маленький фиолетовый стакан корма Cat Energy Slim со вкусом риса" width="72" height="84">
               </div>
-              <a class="button" href="#">заказать</a>
+              <a class="button button__catalog" href="#">заказать</a>
             </div>
           </article>
           <div class="catalog__item catalog__item--load catalog__item--right">
@@ -175,7 +175,7 @@
                 <div class="catalog__load"></div>
                 <p class="catalog__load-label">показать еще 100500 товаров</p>
                 <p class="catalog__load-annotation">На самом деле вкусов гораздо больше!</p>
-                <a class="button button--load" href="#">показать все</a>
+                <a class="button button__catalog button--load" href="#">показать все</a>
               </div>
             </div>
           </div>
@@ -183,38 +183,42 @@
       </section>
       <!-- Дополнительные товары -->
       <section class="catalog__other">
+        <h2 class="catalog__title catalog__title--medium">
+          <span>Дополнительные товары</span>
+        </h2>
         <div class="wrapper">
-          <h2 class="catalog__title catalog__title--medium">Дополнительные товары</h2>
           <div class="catalog__other-wrapper">
             <div class="catalog__list catalog__list--other">
               <article class="catalog__item catalog__item--other">
                 <h3 class="catalog__card-title catalog__card-title--other-good">сахарозаменитель</h3>
                 <p class="catalog__other-param catalog__other-param--left">1 упаковка (100 г)</p>
                 <p class="catalog__other-param catalog__other-param--right">200 Р.</p>
-                <a class="button" href="#">заказать</a>
+                <a class="button button__catalog" href="#">заказать</a>
               </article>
               <article class="catalog__item catalog__item--other">
                 <h3 class="catalog__card-title catalog__card-title--other-good">питьевая вода</h3>
                 <p class="catalog__other-param catalog__other-param--left">5 литров</p>
                 <p class="catalog__other-param catalog__other-param--right">50 Р.</p>
-                <a class="button" href="#">заказать</a>
+                <a class="button button__catalog" href="#">заказать</a>
               </article>
               <article class="catalog__item catalog__item--other">
                 <h3 class="catalog__card-title catalog__card-title--other-good">молоко</h3>
                 <p class="catalog__other-param catalog__other-param--left">1 литр</p>
                 <p class="catalog__other-param catalog__other-param--right">100 Р.</p>
-                <a class="button" href="#">заказать</a>
+                <a class="button button__catalog" href="#">заказать</a>
               </article>
               <article class="catalog__item catalog__item--other">
                 <h3 class="catalog__card-title catalog__card-title--other-good">витамины</h3>
                 <p class="catalog__other-param catalog__other-param--left">1 упаковка (30 г)</p>
                 <p class="catalog__other-param catalog__other-param--right">300 Р.</p>
-                <a class="button" href="#">заказать</a>
+                <a class="button button__catalog" href="#">заказать</a>
               </article>
             </div>
             <div class="catalog__banner banner">
-              <svg width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка подарка"><path d="M64.016 34.713H14.03c-1.754 0-3.182-1.418-3.182-3.16v-9.469c0-1.742 1.428-3.16 3.182-3.16h49.984c1.754 0 3.18 1.418 3.18 3.16v9.47c0 1.741-1.426 3.159-3.18 3.159zM14.03 21.346a.751.751 0 00-.744.738v9.47c0 .406.334.737.744.737h49.984c.41 0 .743-.33.743-.738v-9.469a.75.75 0 00-.743-.738H14.03z" fill="#fff"/><path d="M57.045 67.15H20.999c-3.377 0-6.125-2.73-6.125-6.087V33.502c0-.669.546-1.211 1.219-1.211s1.219.542 1.219 1.21v27.562c0 2.02 1.654 3.664 3.687 3.664h36.046c2.032 0 3.686-1.644 3.686-3.664V33.502c0-.669.546-1.211 1.219-1.211.672 0 1.218.542 1.218 1.21v27.562c0 3.356-2.747 6.086-6.123 6.086z" fill="#fff"/><path d="M39.023 67.15a1.215 1.215 0 01-1.22-1.212V33.502c0-.669.547-1.211 1.22-1.211.672 0 1.218.542 1.218 1.21v32.436c0 .67-.545 1.212-1.218 1.212zM23.811 21.342c-3.814-2.054-5.238-6.809-3.173-10.6 2.064-3.79 6.848-5.205 10.665-3.155 5.814 3.13 8.954 11.86 9.084 12.23l-2.3.804c-.029-.082-2.961-8.221-7.944-10.903-2.635-1.416-5.937-.439-7.36 2.177-1.426 2.617-.444 5.9 2.19 7.317l-1.162 2.13z" fill="#fff"/><path d="M54.231 21.342l-1.16-2.13a5.376 5.376 0 002.622-3.208 5.327 5.327 0 00-.431-4.109 5.382 5.382 0 00-3.226-2.604 5.426 5.426 0 00-4.134.427c-4.982 2.681-7.915 10.82-7.944 10.902l-2.3-.803c.131-.37 3.27-9.1 9.084-12.23a7.859 7.859 0 015.99-.617 7.8 7.8 0 014.674 3.772 7.72 7.72 0 01.623 5.952 7.788 7.788 0 01-3.798 4.648zM61.95 50.932H16.093a1.215 1.215 0 01-1.219-1.211c0-.669.546-1.211 1.219-1.211H61.95c.672 0 1.218.542 1.218 1.21 0 .67-.545 1.212-1.218 1.212z" fill="#fff"/></svg>
-              <p class="banner__promo">Закажите все и&nbsp;получите чехол для кота в подарок</p>
+              <a class="banner__link" href="#">
+                <svg width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка подарка"><path d="M64.016 34.713H14.03c-1.754 0-3.182-1.418-3.182-3.16v-9.469c0-1.742 1.428-3.16 3.182-3.16h49.984c1.754 0 3.18 1.418 3.18 3.16v9.47c0 1.741-1.426 3.159-3.18 3.159zM14.03 21.346a.751.751 0 00-.744.738v9.47c0 .406.334.737.744.737h49.984c.41 0 .743-.33.743-.738v-9.469a.75.75 0 00-.743-.738H14.03z" fill="#fff"/><path d="M57.045 67.15H20.999c-3.377 0-6.125-2.73-6.125-6.087V33.502c0-.669.546-1.211 1.219-1.211s1.219.542 1.219 1.21v27.562c0 2.02 1.654 3.664 3.687 3.664h36.046c2.032 0 3.686-1.644 3.686-3.664V33.502c0-.669.546-1.211 1.219-1.211.672 0 1.218.542 1.218 1.21v27.562c0 3.356-2.747 6.086-6.123 6.086z" fill="#fff"/><path d="M39.023 67.15a1.215 1.215 0 01-1.22-1.212V33.502c0-.669.547-1.211 1.22-1.211.672 0 1.218.542 1.218 1.21v32.436c0 .67-.545 1.212-1.218 1.212zM23.811 21.342c-3.814-2.054-5.238-6.809-3.173-10.6 2.064-3.79 6.848-5.205 10.665-3.155 5.814 3.13 8.954 11.86 9.084 12.23l-2.3.804c-.029-.082-2.961-8.221-7.944-10.903-2.635-1.416-5.937-.439-7.36 2.177-1.426 2.617-.444 5.9 2.19 7.317l-1.162 2.13z" fill="#fff"/><path d="M54.231 21.342l-1.16-2.13a5.376 5.376 0 002.622-3.208 5.327 5.327 0 00-.431-4.109 5.382 5.382 0 00-3.226-2.604 5.426 5.426 0 00-4.134.427c-4.982 2.681-7.915 10.82-7.944 10.902l-2.3-.803c.131-.37 3.27-9.1 9.084-12.23a7.859 7.859 0 015.99-.617 7.8 7.8 0 014.674 3.772 7.72 7.72 0 01.623 5.952 7.788 7.788 0 01-3.798 4.648zM61.95 50.932H16.093a1.215 1.215 0 01-1.219-1.211c0-.669.546-1.211 1.219-1.211H61.95c.672 0 1.218.542 1.218 1.21 0 .67-.545 1.212-1.218 1.212z" fill="#fff"/></svg>
+                <p class="banner__promo">Закажите все и&nbsp;получите чехол для кота в подарок</p>
+              </a>
             </div>
           </div>
         </div>
@@ -257,7 +261,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="https://www.facebook.com/htmlacademy" class="social__link" aria-label="Мы в Фейсбуке">
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb" aria-label="Мы в Фейсбуке">
                 <svg class="social__icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 1.833h-2.75a4.63 4.63 0 00-3.24 1.317 4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596h-3.667V6.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V1.833z" stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </li>
