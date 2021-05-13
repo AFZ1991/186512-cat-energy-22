@@ -52,10 +52,24 @@
   }
 
   &--after {
-    width: 0;
+    display: none;
+    z-index: 5;
 
     @media (min-width: $tablet-width) {
       overflow: hidden;
+      display: block;
+      margin: 0 0;
+      width: 50%;
+    }
+  }
+
+  &--before {
+    z-index: 10;
+
+    @media (min-width: $tablet-width) {
+      overflow: hidden;
+      display: block;
+      margin: 0 50%;
     }
   }
 }
@@ -65,11 +79,24 @@
 
   @media (min-width: $tablet-width) {
     height: 520px;
-    object-fit: contain;
+    object-fit: none;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     //margin-top: 24px;
+  }
+}
+
+.slider-item--after .slider-item__picture {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 -50%;
+  }
+}
+
+.slider-item--before .slider-item__picture {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 50%;
   }
 }
 
