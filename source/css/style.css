@@ -752,13 +752,26 @@ img {
   height: 289px; }
   @media (min-width: 768px) {
     .banner {
+      height: 200px; } }
+  @media (min-width: 1440px) {
+    .banner {
+      height: auto; } }
+
+.banner__link {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  text-decoration: none; }
+  @media (min-width: 768px) {
+    .banner__link {
       grid-template-columns: 1fr 1fr;
       align-items: center;
       height: 200px;
       background: url("../img/back-banner-tablet@1x.jpg") no-repeat;
       background-size: cover; } }
   @media (min-width: 1440px) {
-    .banner {
+    .banner__link {
       display: grid;
       grid-template-columns: 1fr;
       height: auto;
@@ -777,21 +790,6 @@ img {
     .banner {
       background: url("../img/back-banner-desktop@2x.jpg") no-repeat;
       background-size: cover; } }
-
-.banner__link {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  justify-content: center;
-  text-decoration: none; }
-  @media (min-width: 768px) {
-    .banner__link {
-      grid-template-columns: 1fr 1fr;
-      align-items: center; } }
-  @media (min-width: 1440px) {
-    .banner__link {
-      display: grid;
-      grid-template-columns: 1fr; } }
 
 .banner svg {
   margin: auto;
@@ -816,7 +814,7 @@ img {
   @media (min-width: 768px) {
     .banner__promo {
       margin-top: 0;
-      margin-left: 69px; } }
+      margin-left: 68px; } }
   @media (min-width: 1440px) {
     .banner__promo {
       margin: auto;
@@ -2008,7 +2006,8 @@ img {
   grid-template-columns: repeat(2, 1fr);
   justify-content: start;
   align-items: center;
-  height: 114px; }
+  height: 114px;
+  z-index: 100; }
   @media (min-width: 768px) {
     .contacts__description {
       display: flex;
@@ -2061,6 +2060,9 @@ img {
       margin-top: 23px; } }
 
 /* Block map */
+.map {
+  position: relative; }
+
 .map__content {
   display: block;
   height: 362px;
@@ -2070,6 +2072,22 @@ img {
   @media (min-width: 768px) {
     .map__content {
       height: 400px; } }
+
+.map__pin {
+  position: absolute;
+  width: 57px;
+  height: 53px;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%); }
+  @media (min-width: 768px) {
+    .map__pin {
+      width: 113px;
+      height: 106px;
+      top: 35%; } }
+  @media (min-width: 1440px) {
+    .map__pin {
+      left: 75%; } }
 
 /* Block social */
 .social {
