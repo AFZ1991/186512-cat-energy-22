@@ -24,9 +24,7 @@
   }
 }
 
-@media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx),
-  (min-resolution: 2dppx) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-resolution: 2dppx) {
   .banner {
     background: url("../img/back-banner-mobile@2x.jpg") no-repeat;
     background-size: cover;
