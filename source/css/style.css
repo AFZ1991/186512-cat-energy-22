@@ -883,7 +883,7 @@ img {
       display: flex;
       justify-content: flex-end; } }
 
-.main-nav__toggle {
+.main-nav--closed .main-nav__toggle {
   display: block;
   padding: 0;
   width: 30px;
@@ -894,7 +894,7 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer; }
-  .main-nav__toggle::after {
+  .main-nav--closed .main-nav__toggle::after {
     content: "";
     display: block;
     background-color: #000000;
@@ -903,7 +903,39 @@ img {
     margin: auto;
     box-shadow: 0 7px 0 #000000, 0 -7px 0 #000000; }
   @media (min-width: 768px) {
-    .main-nav__toggle {
+    .main-nav--closed .main-nav__toggle {
+      display: none; } }
+
+.main-nav--open .main-nav__toggle {
+  display: block;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .main-nav--open .main-nav__toggle::after {
+    content: "";
+    display: block;
+    background-color: #000000;
+    width: 24px;
+    height: 1.5px;
+    margin: auto;
+    margin-top: -1px;
+    transform: rotate(47deg); }
+  .main-nav--open .main-nav__toggle::before {
+    content: "";
+    display: block;
+    background-color: #000000;
+    width: 24px;
+    height: 1.5px;
+    margin: auto;
+    transform: rotate(-47deg); }
+  @media (min-width: 768px) {
+    .main-nav--open .main-nav__toggle {
       display: none; } }
 
 /* Block site-list */
@@ -1808,17 +1840,34 @@ img {
       grid-row: 3/4; } }
 
 .catalog__good-image {
+  justify-self: center;
   grid-column: 1/2;
-  grid-row: 1/3; }
+  grid-row: 1/3;
+  width: 84px; }
+  .catalog__good-image--big {
+    width: 84px; }
+  .catalog__good-image--little {
+    width: 68px; }
   @media (min-width: 768px) {
     .catalog__good-image {
-      grid-row: 1/2;
-      width: 168px;
-      height: 200px; } }
+      grid-row: 1/2; }
+      .catalog__good-image--big {
+        width: 168px; }
+      .catalog__good-image--little {
+        width: 161px; } }
   @media (min-width: 1440px) {
-    .catalog__good-image {
-      width: 172px;
-      height: 196px; } }
+    .catalog__good-image--big {
+      width: 172px; } }
+
+.catalog__item:nth-child(7) .catalog__good-image {
+  width: 72px; }
+  @media (min-width: 768px) {
+    .catalog__item:nth-child(7) .catalog__good-image {
+      grid-row: 1/2;
+      width: 161px; } }
+  @media (min-width: 1440px) {
+    .catalog__item:nth-child(7) .catalog__good-image {
+      width: 172px; } }
 
 .catalog__main-param {
   font-family: "Arial", "Tahoma", sans-serif;

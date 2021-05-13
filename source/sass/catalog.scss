@@ -282,18 +282,48 @@
 }
 
 .catalog__good-image {
+  justify-self: center;
   grid-column: 1/2;
   grid-row: 1/3;
+  width: 84px;
+
+  &--big {
+    width: 84px;
+  }
+
+  &--little {
+    width: 68px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
-    width: 168px;
-    height: 200px;
+
+    &--big {
+      width: 168px;
+    }
+
+    &--little {
+      width: 161px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--big {
+      width: 172px;
+    }
+  }
+}
+
+.catalog__item:nth-child(7) .catalog__good-image {
+  width: 72px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    width: 161px;
   }
 
   @media (min-width: $desktop-width) {
     width: 172px;
-    height: 196px;
   }
 }
 
