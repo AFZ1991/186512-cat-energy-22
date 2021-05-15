@@ -281,10 +281,17 @@
   }
 }
 
-.catalog__good-image {
+.catalog__img-wrapper {
   justify-self: center;
   grid-column: 1/2;
   grid-row: 1/3;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+  }
+}
+
+.catalog__good-image {
   width: 84px;
 
   &--big {
@@ -296,8 +303,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-row: 1/2;
-
     &--big {
       width: 168px;
     }
