@@ -2046,6 +2046,12 @@ img {
 .page-footer__copyright {
   padding: 22px 0; }
 
+.copyright-link .page-footer__logo-academy {
+  fill: #444444; }
+
+.copyright-link:hover .page-footer__logo-academy {
+  fill: #68b738; }
+
 /* Block contacts */
 .contacts--theme_grey {
   background-color: #f2f2f2; }
@@ -2159,11 +2165,18 @@ img {
     .social__item {
       margin: 0; } }
 
-.social__link:hover path {
+.social__link {
+  fill: #666666; }
+
+.social__link--fb {
+  fill: none;
+  stroke: #666666; }
+
+.social__link:hover .social__icon {
   stroke: none;
   fill: #68b738; }
 
-.social__link--fb:hover path {
+.social__link--fb:hover .social__icon {
   fill: none;
   stroke: #68b738; }
 
@@ -2171,24 +2184,21 @@ img {
   opacity: 0.3; }
 
 /* Block copyright */
-.copyright {
+.copyright-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none; }
   @media (min-width: 768px) {
-    .copyright {
+    .copyright-link {
       width: 163px; } }
-  .copyright:active {
+  .copyright-link:active {
     opacity: 0.3; }
 
-.copyright__site {
+.copyright-link__site {
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #444444; }
-
-.copyright:hover path {
-  fill: #68b738; }
 
 /*# sourceMappingURL=style.css.map */

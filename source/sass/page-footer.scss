@@ -45,3 +45,11 @@
 .page-footer__copyright {
   padding: 22px 0;
 }
+
+.copyright-link .page-footer__logo-academy {
+  fill: $special_dark-grey;
+}
+
+.copyright-link:hover .page-footer__logo-academy {
+  fill: $basic_green;
+}
