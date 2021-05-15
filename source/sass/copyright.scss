@@ -1,5 +1,5 @@
 /* Block copyright */
-.copyright {
+.copyright-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,13 +15,9 @@
 }
 
 // element site
-.copyright__site {
+.copyright-link__site {
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
-}
-
-.copyright:hover path {
-  fill: $basic_green;
 }

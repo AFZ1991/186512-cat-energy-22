@@ -1,10 +1,14 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
+const rename = require("gulp-rename");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
+const webp = require("gulp-webp");
+
 
 // Styles
 
@@ -22,6 +26,29 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+//SVG Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/sprite/*.svg")
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+}
+
+exports.sprite = sprite;
+
+//Webp Images
+
+const webpImages = (done) => {
+  gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({ quality: 50 }))
+    .pipe(gulp.dest("source/img"));
+
+  done();
+}
+
+exports.webpImages = webpImages;
 
 // Server
 
@@ -47,5 +74,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, webpImages, sprite, server, watcher
 );
