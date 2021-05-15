@@ -347,50 +347,51 @@
   padding: 14px 0 14px 15px;
   position: relative;
 
-  &-email + svg {
-    position: absolute;
-    right: 15px;
-
-    @media (min-width: $tablet-width) {
-      right: 19px;
-    }
-  }
-
-  &-email:focus + svg > path {
-    stroke: $basic_green;
-  }
-
-  &-phone + svg {
-    position: absolute;
-    right: 13px;
-
-    @media (min-width: $tablet-width) {
-      right: 17px;
-    }
-  }
-
-  &-phone:focus + svg > g {
-    fill: $basic_green;
-  }
-
   &:hover {
     border-color: #cdcdcd;
   }
 
   &:focus {
     border: 2px solid $special_dark-grey;
+
+    & + .form__icon-mail {
+      stroke: $basic_green;
+    }
+
+    & + .form__icon-phone {
+      fill: $basic_green;
+    }
   }
 
   &--error {
     border: 2px solid $status_error;
 
-    &.form__input-email + svg > path {
+    & + .form__icon-mail {
       stroke: $status_error;
     }
 
-    &.form__input-phone + svg > g {
+    & + .form__icon-phone {
       fill: $status_error;
     }
+  }
+}
+
+.form__icon-mail {
+  position: absolute;
+  right: 15px;
+  stroke: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    right: 19px;
+  }
+}
+
+.form__icon-phone {
+  position: absolute;
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
   }
 }
 

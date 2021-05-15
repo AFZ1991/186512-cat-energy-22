@@ -607,32 +607,35 @@ img {
   border: 1px solid #e7e7e7;
   padding: 14px 0 14px 15px;
   position: relative; }
-  .form__input-email + svg {
-    position: absolute;
-    right: 15px; }
-    @media (min-width: 768px) {
-      .form__input-email + svg {
-        right: 19px; } }
-  .form__input-email:focus + svg > path {
-    stroke: #68b738; }
-  .form__input-phone + svg {
-    position: absolute;
-    right: 13px; }
-    @media (min-width: 768px) {
-      .form__input-phone + svg {
-        right: 17px; } }
-  .form__input-phone:focus + svg > g {
-    fill: #68b738; }
   .form__input:hover {
     border-color: #cdcdcd; }
   .form__input:focus {
     border: 2px solid #444444; }
+    .form__input:focus + .form__icon-mail {
+      stroke: #68b738; }
+    .form__input:focus + .form__icon-phone {
+      fill: #68b738; }
   .form__input--error {
     border: 2px solid #ff8282; }
-    .form__input--error.form__input-email + svg > path {
+    .form__input--error + .form__icon-mail {
       stroke: #ff8282; }
-    .form__input--error.form__input-phone + svg > g {
+    .form__input--error + .form__icon-phone {
       fill: #ff8282; }
+
+.form__icon-mail {
+  position: absolute;
+  right: 15px;
+  stroke: #000000; }
+  @media (min-width: 768px) {
+    .form__icon-mail {
+      right: 19px; } }
+
+.form__icon-phone {
+  position: absolute;
+  right: 13px; }
+  @media (min-width: 768px) {
+    .form__icon-phone {
+      right: 17px; } }
 
 .form__options + .form__label::before {
   grid-column: 1/2;
@@ -2161,9 +2164,6 @@ img {
   margin-left: 36px; }
   .social__item:first-child {
     margin-left: 0; }
-  @media (min-width: 768px) {
-    .social__item {
-      margin: 0; } }
 
 .social__link {
   fill: #666666; }
