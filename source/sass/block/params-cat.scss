@@ -1,0 +1,95 @@
+/* Block params-cat */
+.params-cat {
+  font-family: $oswald;
+  color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.params-cat__list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.params-cat__container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 56px;
+
+  border: 1px solid $special_grey;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
+}
+
+// element termin
+.params-cat__termin {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+// element description
+.params-cat__description {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  margin: auto;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $arial;
+  text-align: center;
+  color: $special_dark-grey;
+
+  background: $basic_grey-2;
+
+  @media (min-width: $tablet-width) {
+    bottom: -5px;
+
+    width: 140px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background: $basic_white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $basic_grey-2;
+  }
+}

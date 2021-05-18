@@ -1,0 +1,145 @@
+/* Block sample */
+.sample {
+  position: relative;
+
+  padding-top: 26px;
+  padding-bottom: 36px;
+
+  font-family: $oswald;
+  color: $basic_black;
+
+  background-color: $basic_grey-2;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 0 67px;
+
+    background: linear-gradient(180deg, rgb(255, 255, 255) 57%, rgb(234, 234, 234) 43%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 49px;
+
+    background: linear-gradient(180deg, rgb(255, 255, 255) 31%, rgb(234, 234, 234) 31%);
+  }
+}
+
+.sample__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 79px;
+  }
+}
+
+.sample__item-descript {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
+// element title
+.sample__title {
+  margin-top: 0;
+  margin-bottom: 33px;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 145px;
+    padding-top: 58px;
+  }
+}
+
+// element description
+.sample__description {
+  margin-bottom: 24px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $arial;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 56px;
+    padding-right: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 455px;
+    margin-bottom: 70px;
+  }
+}
+
+// element params-cat
+.sample__params-cat {
+  padding-bottom: 28px;
+}
+
+// element price
+.sample__price {
+  margin-top: 34px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    margin: 0;
+    margin-top: 10px;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 100%;
+    margin: 0;
+
+    text-align: left;
+  }
+}
+
+.sample__price span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+  }
+}
+
+.sample__slider {
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+    padding-top: 0;
+  }
+}

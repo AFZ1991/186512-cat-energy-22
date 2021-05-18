@@ -1,0 +1,284 @@
+/* Block slider */
+
+.slider {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+// elemtnt list
+.slider__list {
+  position: relative;
+
+  display: table;
+  width: 280px;
+  height: 240px;
+  margin: auto;
+  margin-bottom: 26px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 686px;
+  }
+}
+
+.slider-item {
+  width: 100%;
+  height: 234px;
+
+  @media (min-width: $tablet-width) {
+    height: 520px;
+    padding: 0 46px;
+
+    background: linear-gradient(180deg, #ffffff 32%, #eaeaea 32%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(180deg, #ffffff 36.4%, #eaeaea 34%);
+  }
+
+  &--after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: block;
+      width: 50%;
+      padding: 0 0 8px;
+      overflow: hidden;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 46%;
+    }
+  }
+
+  &--before {
+    z-index: 10;
+  }
+}
+
+.slider-item__picture {
+  height: 100%;
+}
+
+.slider-item--after .slider-item__picture {
+  @media (min-width: $tablet-width) {
+    margin-left: -44%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -51%;
+  }
+}
+
+// block toggle
+.slider-toggle {
+  display: flex;
+  justify-content: center;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    margin-right: 33px;
+    padding-top: 27px;
+  }
+}
+
+// element control
+.slider-toggle__scale {
+  position: relative;
+  z-index: 1;
+
+  display: none;
+  flex-shrink: 0;
+  width: 402px;
+  height: 6px;
+  margin: 6px 35px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -13px;
+    bottom: 0;
+    left: -13px;
+
+    background-color: #dcdcdc;
+    border-radius: 2px;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+    }
+  }
+}
+
+.slider-toggle__group {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.slider-toggle__input {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  z-index: 1;
+
+  width: 394px;
+  height: 34px;
+  margin: 0;
+
+  cursor: pointer;
+  opacity: 0;
+}
+
+.slider-toggle__button {
+  position: absolute;
+  top: -1px;
+  z-index: 10;
+
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+  margin: -13px 0 0 -13px;
+
+  background-color: $basic_green;
+  border: 13px solid $basic_white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+
+  @media (min-width: $tablet-width) {
+    content: "";
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.slider-toggle__label {
+  position: relative;
+
+  max-width: 50%;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $oswald;
+  text-align: center;
+  color: $basic_black;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    border-bottom: 1px dotted #c4c4c4;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+
+    width: 41px;
+    height: 12px;
+
+    background-color: $basic_white;
+    border: 1px solid $special_grey;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 7px;
+
+    width: 35px;
+    height: 6px;
+
+    background-color: $basic_green;
+    border-radius: 5px;
+  }
+
+  &--before {
+    padding-right: 60px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
+
+    &::before {
+      right: 0;
+
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    &::after {
+      content: "";
+      right: 0;
+
+      @media (min-width: $tablet-width) {
+        content: none;
+      }
+    }
+  }
+
+  &--after {
+    padding-left: 60px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
+
+    &::before {
+      left: 0;
+
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+    }
+
+    &::after {
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,238 @@
+/* Block program-card */
+.program-card {
+  margin-bottom: 20px;
+  padding: 21px 20px 22px 20px;
+
+  font-family: $arial;
+  color: $basic_black;
+
+  background-color: $basic_grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 20px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 51px 57px 52px;
+  }
+}
+
+// element content
+.program-card__content {
+  position: relative;
+
+  margin-bottom: 19px;
+  padding-bottom: 21px;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 23px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--slim {
+    @media (min-width: $tablet-width) {
+      padding-right: 260px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
+  }
+
+  // mod slim
+  &--slim::before {
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 53px;
+
+    background-image: url("../img/cat-back-1.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      right: 42px;
+      left: auto;
+
+      width: 200px;
+      height: 211px;
+
+      background-size: 200px 211px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -36px;
+      right: auto;
+      left: auto;
+
+      width: 100px;
+      height: 106px;
+
+      background-size: 100px 106px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $tablet-width) {
+      padding-right: 292px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
+  }
+
+  // mod pro
+  &--pro::before {
+    top: 0;
+    left: -7px;
+
+    width: 67px;
+    height: 50px;
+
+    background-image: url("../img/cat-back-2.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+      right: 8px;
+      left: auto;
+
+      width: 268px;
+      height: 200px;
+
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -30px;
+      right: auto;
+      left: -19px;
+
+      width: 134px;
+      height: 100px;
+
+      background-size: 134px 100px;
+    }
+  }
+}
+
+// element title
+.program-card__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-top: 10px;
+  padding-left: 71px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: $oswald;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding-top: 0;
+    padding-left: 1px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
+}
+
+//element description
+.program-card__description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $arial;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+// element link
+.program-card__link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  width: 150px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $oswald;
+  color: $basic_black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    order: 2;
+    width: 18px;
+    height: 2px;
+    margin-left: 16px;
+
+    background-color: $basic_black;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    display: block;
+    order: 3;
+
+    border: 5px solid transparent;
+    border-left: 5px solid $basic_black;
+  }
+}
+
+.program-card__link:hover {
+  &::before {
+    width: 26px;
+  }
+}
+
+.program-card__link:active {
+  opacity: 0.3;
+}

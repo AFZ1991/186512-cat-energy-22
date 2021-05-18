@@ -1,0 +1,85 @@
+/* Block social */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 129px;
+    margin-left: 22px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 26px;
+  }
+}
+
+.social__item {
+  margin-left: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.social__link {
+  fill: $special_grey-2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.social__link--vk svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__link--inst svg {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link--fb {
+  fill: none;
+  stroke: $special_grey-2;
+}
+
+.social__link--fb svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.social__link:hover .social__icon {
+  fill: $basic_green;
+  stroke: none;
+}
+
+.social__link--fb:hover .social__icon {
+  fill: none;
+  stroke: $basic_green;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
