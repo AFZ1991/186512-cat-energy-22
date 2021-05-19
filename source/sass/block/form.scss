@@ -361,53 +361,44 @@
 
 // element input
 .form__input::-webkit-input-placeholder {
-  font-size: 16px;
-  line-height: 18px;
   font-family: $oswald;
   color: $special_dark-grey;
   text-transform: uppercase;
   text-overflow: ellipsis;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .form__input::-moz-placeholder {
-  font-size: 16px;
-  line-height: 18px;
   font-family: $oswald;
   color: $special_dark-grey;
   text-transform: uppercase;
   text-overflow: ellipsis;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .form__input {
   position: relative;
 
+  font-size: 16px;
+  line-height: 18px;
+
   display: block;
-  padding: 15px 0 14px 14px;
+  padding: 12px 0 14px 14px;
 
   background-repeat: no-repeat;
   background-position: 95%;
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
-    padding: 21px 17px 14px 17px;
+    padding: 9px 17px 10px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $special_grey;
   }
 
   &:focus {
-    border: 2px solid $special_dark-grey;
+    outline: 2px solid $special_dark-grey;
 
     & + .form__icon-mail {
       stroke: $basic_green;
@@ -530,6 +521,10 @@
   @media (min-width: $tablet-width) {
     left: 13px;
   }
+}
+
+.form__item:focus-within .form__label::before {
+  outline: 1px solid $special_dark-grey;
 }
 
 .form__textarea {

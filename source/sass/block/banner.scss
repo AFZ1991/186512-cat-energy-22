@@ -1,6 +1,8 @@
 /* Block banner */
 .banner {
-  background: url("../img/back-banner-mobile@1x.jpg") no-repeat;
+  background-color: $basic_green;
+  background-image: url("../img/back-banner-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -17,22 +19,13 @@
   @media (min-width: $tablet-width) {
     align-items: center;
     padding: 53px 0;
-
-    background: url("../img/back-banner-tablet@1x.jpg") no-repeat;
-    background-size: cover;
-
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    // display: grid;
-    // height: auto;
     padding: 58px 5px 43px;
-
-    background: url("../img/back-banner-desktop@1x.jpg") no-repeat;
-    background-size: cover;
-
     grid-template-columns: 1fr;
+    height: 100%;
   }
 }
 
@@ -40,18 +33,10 @@
   (min-resolution: 1.5dppx),
   (min-resolution: 2dppx) {
   .banner {
-    background: url("../img/back-banner-mobile@2x.jpg") no-repeat;
+    background-color: $basic_green;
+    background-image: url("../img/back-banner-mobile@2x.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-
-    @media (min-width: $tablet-width) {
-      background: url("../img/back-banner-tablet@2x.jpg") no-repeat;
-      background-size: cover;
-    }
-
-    @media (min-width: $desktop-width) {
-      background: url("../img/back-banner-desktop@2x.jpg") no-repeat;
-      background-size: cover;
-    }
   }
 }
 
